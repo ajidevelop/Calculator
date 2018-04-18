@@ -39,3 +39,7 @@ Python 3
     *   Inputs for operator
         *   `factorial`
         *   `!`
+*   Logarithm
+    *   Only works for perfect logarithms. The first number is the base and the second number is the subscript.
+    *   Inputs for operator
+        *   `log`
