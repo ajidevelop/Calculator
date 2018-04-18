@@ -85,6 +85,6 @@ while(more_calc == True):
 	if (more_calc == "Y" or more_calc == "y" or more_calc == "Yes" or more_calc == "yes"):
 		calc()
 		more_calc = True
-	elif (more_calc == "N" or more_calc == "n" or more_calc == "No" or more_calc == "no"):
+	elif (more_calc == "N" or more_calc == "n" or more_calc == "No" or more_calc == "no" or "end"):
 		more_calc = False
 		break
