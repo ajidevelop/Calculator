@@ -47,3 +47,21 @@ Python 3
     *   Solver solves for an unknown variable. The first input is the coefficient of x. The second input is the number the shift in x. The third input is the what the entire equation is equal to. The final inpu is the operator that is afftects x from the shift.
     *   Inputs for opertaor
         *   `solveX`
+    *  *Examples*  
+        
+        In this case the user is trying to create the solve for x in 2x - 44 = 33.  
+        After each colon there the program asks for a user input.
+            
+        ```
+            What operator should be used: solveX
+            coefficient of x: 2
+            integer: 44
+            answer: 33
+            opertaor: -
+        ```
+        
+        The program repeats the equation made and gives the correct value of x to satisfy the equation.
+
+        ```
+            2.0x - 44.0 = 33.0
+            38.5 
