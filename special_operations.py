@@ -7,3 +7,9 @@ def log (b, c):
 			print(n)
 			break
 
+def factorials(n):
+	answer = 1
+	for number in range(1, int(n) + 1):
+		answer = answer * number
+	return answer
+

@@ -19,20 +19,25 @@ def calc():
 		o = input("opertaor: ")
 		print(str(c) + "x " + o + " " + str(n) + " = " + str(a))
 		print(var.solveX(c, n, a, o))
-
-
+	
 	numb1 = ""
 	numb2 = ""
 
 	if (operator != "solveX"):
-		numb1 = input("Enter first number: ")
-		numb2 = input("Enter second numeber: ")
+		if (operator == "factorial" or "!"):
+			numb1 = input("Enter a number: ")
+		else:
+			numb1 = input("Enter first number: ")
+			numb2 = input("Enter second numeber: ")
 
-	number1 = float(numb1)
-	number2 = float(numb2)
+	number1 = int(numb1)
+	try:
+		number2 = int(numb2)
+	except ValueError:
+		number2 = ""
 
 
-	if (operator == "end" or number1 == "end" or number2 ==  "end"):
+	if (operator == "end" or number1 == "end" or number2 == "end"):
 		pass
 	
 	if (operator == "*" or operator == "multiply" or operator == "times" or operator == "time") :
@@ -66,6 +71,8 @@ def calc():
 		print(result_root)
 	elif (operator == "log"):
 		print(so.log(number1, number2))
+	elif (operator == "!" or "factorial"):
+		print(so.factorials(number1))
 
 calc()
 
@@ -74,4 +81,3 @@ if (more_calc == "Y" or more_calc == "y" or more_calc == "Yes" or more_calc == "
 	calc()
 elif (more_calc == "N" or more_calc == "n" or more_calc == "No" or more_calc == "no"):
 	pass
-
