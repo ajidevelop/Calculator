@@ -43,3 +43,7 @@ Python 3
     *   Only works for perfect logarithms. The first number is the base and the second number is the subscript.
     *   Inputs for operator
         *   `log`
+*   Solver
+    *   Solver solves for an unknown variable. The first input is the coefficient of x. The second input is the number the shift in x. The third input is the what the entire equation is equal to. The final inpu is the operator that is afftects x from the shift.
+    *   Inputs for opertaor
+        *   `solveX`
