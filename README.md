@@ -1,6 +1,6 @@
 # Calculator
 
-This is a simple calculator made out of python. More features are to be added as the calculator contiues to be under development.
+This is a simple calculator made out of python. More features are to be added as the calculator contiues to be under development. In order to start the calculator, make srue all the neccessary files are downloaded into a single direcotory. Open terminal and navigate to the direcotory where the program is palced. Tdype `"python calc.py"` under the directory of where the file is placed.
 
 ***Prerquisites***
 Python 3
@@ -52,7 +52,7 @@ Python 3
         In this case the user is trying to create the solve for x in 2x - 44 = 33.  
         After each colon there the program asks for a user input.
             
-        ```
+        ``` 
             What operator should be used: solveX
             coefficient of x: 2
             integer: 44

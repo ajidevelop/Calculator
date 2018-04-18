@@ -1,6 +1,7 @@
 import numpy as np
 import variables as var
 import special_operations as so
+import sys
 
 
 Number = []
@@ -29,16 +30,18 @@ def calc():
 		else:
 			numb1 = input("Enter first number: ")
 			numb2 = input("Enter second numeber: ")
-
-	number1 = int(numb1)
 	try:
-		number2 = int(numb2)
+		number1 = float(numb1)
+	except ValueError:
+		number1 = ""
+	try:
+		number2 = float(numb2)
 	except ValueError:
 		number2 = ""
 
 
 	if (operator == "end" or number1 == "end" or number2 == "end"):
-		pass
+		sys.exit()
 	
 	if (operator == "*" or operator == "multiply" or operator == "times" or operator == "time") :
 		result_mult = number1 * number2
@@ -76,8 +79,12 @@ def calc():
 
 calc()
 
-more_calc = input("Would you like to continue (Y/N):")
-if (more_calc == "Y" or more_calc == "y" or more_calc == "Yes" or more_calc == "yes"):
-	calc()
-elif (more_calc == "N" or more_calc == "n" or more_calc == "No" or more_calc == "no"):
-	pass
+more_calc = True
+while(more_calc == True):
+	more_calc = input("Would you like to continue (Y/N):")
+	if (more_calc == "Y" or more_calc == "y" or more_calc == "Yes" or more_calc == "yes"):
+		calc()
+		more_calc = True
+	elif (more_calc == "N" or more_calc == "n" or more_calc == "No" or more_calc == "no"):
+		more_calc = False
+		break
