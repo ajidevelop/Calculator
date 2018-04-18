@@ -2,7 +2,10 @@
 
 This is a simple calculator made out of python. More features are to be added as the calculator contiues to be under development. In order to start the calculator, make srue all the neccessary files are downloaded into a single direcotory. Open terminal and navigate to the direcotory where the program is palced. Tdype `"python calc.py"` under the directory of where the file is placed.
 
+If at any point you want the calculator program to stop anytime there is a user input type `end`
+
 ***Prerquisites***
+
 Python 3
 
 ***Featrures***
